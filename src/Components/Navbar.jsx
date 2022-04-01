@@ -5,6 +5,13 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import { Switch, Route, Redirect } from 'react-router-dom'
+import Home from "./Home";
+import Services from "./Services";
+import About from "./About";
+import Contact from "./Contact";
+
+
 
 
 const Navbar = () => {
@@ -40,6 +47,12 @@ const Navbar = () => {
                         <MenuItem onClick={popupState.close}>Nos produits</MenuItem>
                         <MenuItem onClick={popupState.close}>A propos</MenuItem>
                         <MenuItem onClick={popupState.close}>Contact</MenuItem>
+                        <Switch>
+                          <Route exact path="/Nos produits" component={Services} />
+                          <Route exact path="/A propos" component={About} />
+                          <Route exact path="/Contact" component={Contact} />
+                          <Route exact path="/" component={Home} />
+                        </Switch>
                       </Menu>
                     </React.Fragment>
                   )}
