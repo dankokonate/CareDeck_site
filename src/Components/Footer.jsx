@@ -58,7 +58,7 @@ const Footer = () =>
         </Row>
         <hr />
         <div className="footerfooter" style={{marginLeft:"auto", marginRight:"auto"}}>
-          <p> &copy; {new Date().getFullYear()} Copyright: <a style={{textDecoration:"", color:"black"}} href="https://konatedanko.netlify.app/"> Danko Konate </a> <br />
+          <p> &copy; {new Date().getFullYear()} Copyright: <a style={{textDecoration:"", color:"black"}} href="https://konatedanko.netlify.app/" target="_blank"> Danko Konate </a> <br />
               <a style={{textDecoration:"", color:"black"}} href="">Mentions légales</a>
           </p>
         </div>
