@@ -9,7 +9,8 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Services from './Components/Services'
 import Navbar from './Components/Navbar'
-import Footer from './Components/Footer';
+import Footer from './Components/Footer'
+import Map from './Components/Map';
 
 
 
@@ -17,7 +18,6 @@ const App = () => {
   return (
     <>
 		<Navbar />
-		
 		<Switch>
 			<Route exact path="/" component={Home} />
 			<Route exact path="/services" component={Services} />
