@@ -1,15 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
 import navbar from "../images/CareDeck.png"
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
-import { Switch, Route, Redirect } from 'react-router-dom'
-//import Home from "./Home";
-//import Services from "./Services";
-//import About from "./About";
-//import Contact from "./Contact";
+import { Link } from 'react-scroll'
 
 
 
@@ -25,9 +20,12 @@ const Navbar = () => {
                 <grid className="item-img">
                   <img src={navbar} alt="Logo" width={50} height={50} />
                 </grid>
-                <NavLink exact className="navbar-brand" to="/">
+                {/* <NavLink exact className="navbar-brand" to="/">
                   CareDevs
-                </NavLink>
+                </NavLink> */}
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                  CareDevs
+                </Link>
                 <PopupState variant="popover" popupId="demo-popup-menu">
                   {(popupState) => (
                     <React.Fragment>
@@ -43,16 +41,26 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                       </Button>
                       <Menu {...bindMenu(popupState)}>
-                        <MenuItem onClick={popupState.close}>Accueil</MenuItem>
-                        <MenuItem onClick={popupState.close}>Nos produits</MenuItem>
-                        <MenuItem onClick={popupState.close}>A propos</MenuItem>
-                        <MenuItem onClick={popupState.close}>Contact</MenuItem>
-                        <Switch>
-                          <Route /* exact path="/Nos produits" component={Services} />
-                          <Route exact path="/A propos" component={About} />
-                          <Route exact path="/Contact" component={Contact} />
-                          <Route exact path="/" component={Home} *//>
-                        </Switch>
+                        <MenuItem>
+                          <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                            Accueil
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link activeClass="active" to="services" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                            Nos Produits
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                            A propos
+                          </Link>
+                        </MenuItem>
+                        <MenuItem>
+                          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                            Contact
+                          </Link>
+                        </MenuItem>
                       </Menu>
                     </React.Fragment>
                   )}
@@ -63,28 +71,24 @@ const Navbar = () => {
                 >
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" exact
-                        className="nav-link active"
-                        aria-current="page"
-                        to="/"
-                      >
+                      <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                         Accueil
-                      </NavLink>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" exact className="nav-link" to="/services">
-                        Nos produits
-                      </NavLink>
+                      <Link activeClass="active" to="services" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                        Nos Produits
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" exact className="nav-link" to="/about">
-                        A propos
-                      </NavLink>
+                      <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} delay={100}>
+                        A Propos
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" exact className="nav-link" to="/contact">
+                      <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                         Contact
-                      </NavLink>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -3,8 +3,7 @@ import {Box,
   Container,
   Row,
   Column,
-  /*FooterLink,
-  Heading*/} from "./FooterStyle"
+  } from "./FooterStyle"
   import { Grid } from "@material-ui/core";
 
 const Footer = () =>

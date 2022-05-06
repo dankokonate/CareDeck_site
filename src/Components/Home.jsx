@@ -15,9 +15,9 @@ const Home = () => {
                 visit='/services' 
                 btnname="Nos produits" 
             />
-        <Services/>
+        {/* <Services/>
         <About/>
-        <Contact/>
+        <Contact/> */}
         </>
     )
 }
