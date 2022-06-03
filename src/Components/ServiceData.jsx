@@ -9,15 +9,18 @@ import medicine from "../images/medicine.png";
 const ServiceData = [
     {
         imgsrc: doctors,
-        title: "Boitier"
+        title: "Améliorer les conditions de travail du personnel soignant",
+        key: 1,
     },
     {
         imgsrc: nurse,
-        title: "Aide soignant"
+        title: "Offrir à chaque patient des soins personnalisés",
+        key: 2
     },
     {
         imgsrc: medicine,
-        title: "Medecin & Aide soignant"
+        title: "Prendre en charge plus rapidement les patients",
+        key:3
     }
 ];
 

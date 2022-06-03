@@ -6,10 +6,13 @@ const About = () => {
     return (
         <>
             <Common 
-                name='Bienvenue sur la page A propos' 
-                imgsrc={about} 
+                name='Organigramme' 
+                imgsrc={about}
                 visit='/contact' 
                 btnname="Contact Now" 
+                text= "MERCI ! A nos partenaires pour les conseils, la confiance et le soutien qu'ils nous ont apportés."
+                titre= ""
+                logoPart = ""
             />
         </>
     )

@@ -1,9 +1,6 @@
 import React from 'react';
 import home from "../images/medicine.png";
 import Common from './Common';
-import Services from './Services';
-import About from './About';
-import Contact from './Contact';
 const Home = () => {
     return (
         <>
@@ -14,6 +11,8 @@ const Home = () => {
                 compName="CareDevs"
                 visit='/services' 
                 btnname="Nos produits" 
+                text = "C'est autour de ces valeurs communes que CareDevs est né. Une équipe de 25 étudiants en première année de Master MIAGE à l'Université d'Evry, regroupés en tribu autour d'un projet :"
+                titre = "AMBITION, CONFIANCE, PARTAGE "
             />
         {/* <Services/>
         <About/>

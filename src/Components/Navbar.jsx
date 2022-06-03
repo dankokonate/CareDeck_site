@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="row">
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light" >
-              <div className="container-fluid" /*style={{background :"red"}}*/>
+              <div className="container-fluid">
                 <grid className="item-img">
                   <img src={navbar} alt="Logo" width={50} height={50} />
                 </grid>
@@ -40,7 +40,7 @@ const Navbar = () => {
                         {...bindTrigger(popupState)}>
                         <span className="navbar-toggler-icon"></span>
                       </Button>
-                      <Menu {...bindMenu(popupState)}>
+                      <Menu className="NavStyle" {...bindMenu(popupState)}>
                         <MenuItem>
                           <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                             Accueil
