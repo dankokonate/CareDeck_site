@@ -8,25 +8,29 @@ import Services from './Components/Services'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import {  Element } from 'react-scroll'
+import CardProduct from './Components/CardProduct'
 
 
 const App = () => {
   return (
     <>
-		<Navbar />
-		<Element name="home" className="home">
-          <Home />
-        </Element>
-		<Element name="services" className="services">
-          <Services />
-        </Element>
-		<Element name="about" className="about">
-          <About />
-        </Element>
-		<Element name="contact" className="contact">
-          <Contact />
-        </Element>
-		<Footer/>
+      <Navbar />
+      <Element name="home" className="home">
+        <Home />
+      </Element>
+      <Element name="services" className="services">
+        <Services />
+      </Element>
+      <Element name="cardProduct" className="cardProduct">
+        <CardProduct />
+      </Element>
+      <Element name="about" className="about">
+        <About />
+      </Element>
+      <Element name="contact" className="contact">
+        <Contact />
+      </Element>
+      <Footer />
     </>
   )
 }

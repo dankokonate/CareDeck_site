@@ -33,6 +33,7 @@ const Services = () => {
                                         imgsrc={val.imgsrc}
                                         title={val.title}
                                         key={index}
+                                        contenue={val.contenue}
                                     />
                                 }
                                 )}
