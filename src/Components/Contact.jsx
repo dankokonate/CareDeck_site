@@ -47,7 +47,7 @@ const Contact = () => {
                   name="fullname"
                   value={data.fullname}
                   onChange={inputEvent}
-                  placeholder="Enter your name"
+                  placeholder="Entre votre nom"
                 />
                 <label htmlFor="exampleFormControlInput1" className="form-label">
                   Adresse mail
@@ -59,7 +59,7 @@ const Contact = () => {
                   name="email"
                   value={data.email}
                   onChange={inputEvent}
-                  placeholder="name@example.com"
+                  placeholder="nom@example.com"
                 />
               </div>
               <div className="mb-3">

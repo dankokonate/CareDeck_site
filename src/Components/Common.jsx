@@ -10,7 +10,8 @@ const Common = ({
     btnname,
     text,
     titre,
-    logoPart
+    logoPart,
+    imgabout
 }) => {
     return (
         <>

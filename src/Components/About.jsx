@@ -1,18 +1,20 @@
 import React from 'react'
 import about from "../images/about.svg";
 import Common from './Common'
+import about1 from "../images/Control_panel.png"
 
 const About = () => {
     return (
         <>
             <Common 
-                name='Organigramme' 
+                name='A propos' 
                 imgsrc={about}
                 visit='/contact' 
-                btnname="Contact Now" 
+                btnname="Contactez-nous" 
                 text= "MERCI ! A nos partenaires pour les conseils, la confiance et le soutien qu'ils nous ont apportés."
-                titre= ""
+                titre= "Voir l'organigramme"
                 logoPart = ""
+                //imgabout={about1}
             />
         </>
     )

@@ -11,7 +11,7 @@ const Services = () => {
             <div>
                 <p>
                    <center> 
-                    CareDeck est le bouton d'appel 2.0<br/>
+                    <strong>CareDeck est le bouton d'appel 2.0</strong><br/>
                     Son but ? <br />
                     Améliorer les boutons d'appels qui équipent nos aujourd'hui nos hôpitaux.<br/>
                     Relié à une application, il permet au personnel soignant de visualiser instantanément les requêtes des patients.<br/>

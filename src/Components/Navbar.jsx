@@ -29,7 +29,7 @@ const Navbar = () => {
                 <PopupState variant="popover" popupId="demo-popup-menu">
                   {(popupState) => (
                     <React.Fragment>
-                      <Button variant="contained" //color="primary"
+                      <Button variant="contained"
                         className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
