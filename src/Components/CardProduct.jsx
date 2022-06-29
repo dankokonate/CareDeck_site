@@ -45,12 +45,12 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions className='action'>
-        <a href="https://youtu.be/TW5G1pbQfr0" target="_blank">
+        <a href="https://youtu.be/TW5G1pbQfr0" target="_blank" style={{textDecoration:"none"}}>
         <Button variant="contained" size="small" color="primary">
           Voir scénario 1
         </Button>
         </a >
-        <a href="https://youtu.be/zmO-RpBYLa8" target="_blank">
+        <a href="https://youtu.be/zmO-RpBYLa8" target="_blank" style={{textDecoration:"none"}}>
         <Button variant="contained" size="small" color="primary">
           Voir scénario 2
         </Button>

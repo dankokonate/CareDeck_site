@@ -11,7 +11,7 @@ const Home = () => {
                 compName="CareDevs"
                 visit='/services' 
                 btnname="Nos produits" 
-                text = "C'est autour de ces valeurs communes que CareDevs est né. Une équipe de 25 étudiants en première année de Master MIAGE à l'Université d'Evry, regroupés en tribu autour d'un projet :"
+                text = "C'est autour de ces valeurs communes que CareDevs est né. Une équipe de 25 étudiants en première année de Master MIAGE à l'Université d'Evry, regroupés en tribu autour d'un projet."
                 titre = "AMBITION, CONFIANCE, PARTAGE "
             />
         {/* <Services/>

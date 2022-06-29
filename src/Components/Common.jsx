@@ -25,10 +25,10 @@ const Common = ({
                                         {name}
                                         {isCompName ? <strong className="brand-name"> {compName}</strong> : ""}
                                     </h1>
-                                    <h2 className="my-3">
+                                    <h3 className="my-3">
                                         <p> <strong>{titre}</strong></p>
                                         <p>{text}</p>
-                                    </h2>
+                                    </h3>
                                     <div className="mt-3">
                                         <NavLink to={visit} className="btn-get-started ">
                                             {btnname}

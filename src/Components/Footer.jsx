@@ -4,63 +4,54 @@ import {Box,
   Row,
   Column,
   } from "./FooterStyle"
-  import { Grid } from "@material-ui/core";
+  import images from '../images/CareDeck.png'
 
 const Footer = () =>
  (
     <Box>
       <Container>
         <Row>
-          <Column>
-            <h2 style={{color:"white", padding:10,fontWeight: "bold"}}>CareDeck</h2>
-            <p>CareDeck est un boitier qui va simplifier la vie des infirmiers et infirmières</p>
+          <Column style={{padding:5}}>
+            <img src={images} alt="CareDeck"  width={110}/>
           </Column>
           <Column>
-            <h5 style={{color:"white", padding:10}}>Social Media</h5>
-            <Grid style={{display:"inline-flex",color:"black"}}>
-              <Grid item xs={3}>
-                <a href="">
-                  <img src="https://img.icons8.com/glyph-neue/344/facebook.png" alt="" width="40" />
+            <h5 style={{color:"#0257D5", padding:5}}><strong>Le produit</strong></h5>
+                <a href="" style={{textDecoration:"none", color: "white"}}>
+                  Avantage
                 </a>
-              </Grid>
-
-              <Grid item xs={3}>
-                <a href="">
-                  <img src="https://img.icons8.com/glyph-neue/344/instagram-new.png" alt="Intagram" width="40" />
+                <a href="" style={{textDecoration:"none", color: "white"}}>
+                  Portfolio
                 </a>
-              </Grid>
-              <Grid item xs={3}>
-                <a href="">
-                  <img src="https://img.icons8.com/glyph-neue/344/linkedin.png" alt="Linkedin" width="40" />
-                </a>
-              </Grid>
-              <Grid item xs={3}>
-                <a href="">
-                  <img src="https://img.icons8.com/ios-filled/344/twitter-circled--v1.png" alt="Twiter" width="40" />
-                </a>
-              </Grid>
-              <Grid item xs={3}>
-                <a href="">
-                  <img src="https://img.icons8.com/glyph-neue/344/github.png" alt="Github" width="40" />
-                </a>
-              </Grid>
-            </Grid>
           </Column>
           <Column>
-            <h5 style={{color:"white", padding:10}}>Nous Contacter</h5>
-            <p> <strong>Adresse</strong>: 23 Bd de France, 91037 Évry-Courcouronnes <br />
-                <strong>Tel</strong>: 01 64 85 34 00 <br />
-                <strong>Email</strong>:	m1-miage-21@googlegroups.com <br />
-                <strong>Site web</strong>: 
-            </p>
+            <h5 style={{color:"#0257D5", padding:5}}><strong>A propos</strong></h5>
+                <a href="" style={{textDecoration:"none", color: "white"}}>
+                  Qui sommes-nous
+                </a>
+                <a href="" style={{textDecoration:"none", color: "white"}}>
+                  Nous trouver
+                </a>
+                <a href="" style={{textDecoration:"none", color: "white"}}>
+                Contactez nous
+                </a>
           </Column>
         </Row>
-        <hr />
-        <div className="footerfooter" style={{marginLeft:"auto", marginRight:"auto"}}>
-          <p> &copy; {new Date().getFullYear()} Copyright: <a style={{textDecoration:"", color:"black"}} href="https://konatedanko.netlify.app/" target="_blank"> Danko Konate </a> <br />
-              <a style={{textDecoration:"", color:"black"}} href="">Mentions légales</a>
-          </p>
+        <br/>
+        <div>
+          <div className="footerfooter" style={{marginLeft:"auto", marginRight:"auto" ,color:"white"}}>
+          <a style={{textDecoration:"none", color:"white",marginRight: "20px"}} href="">Mentions légales</a>
+          <a style={{textDecoration:"none", color:"white", marginRight: "20px"}} href="">Politique de confidentialité</a>
+          <a style={{textDecoration:"none", color:"white"}} href="">Paramètre des cookies</a>
+          </div>
+          <div style={{position: 'absolute',margin:0,right:70}}>
+            <a href="" style={{textDecoration:"none",marginLeft:30}}><img src="https://img.icons8.com/color/344/facebook-new.png" alt="FaceBook" width={30}/></a> 
+            <a href="" style={{textDecoration:"none",marginLeft:30}}><img src="https://img.icons8.com/fluency/344/twitter.png" alt="Twitter"  width={30}  /></a> 
+            <a href="" style={{textDecoration:"none",marginLeft:30}}><img src="https://img.icons8.com/fluency/344/instagram-new.png" alt="Instagram"  width={30}  /></a> 
+          </div>
+
         </div>
+        <hr/>
+        <p style={{textDecoration:"none", color:"white", margin: 'auto'}}>&copy; {new Date().getFullYear()} Copyright: <a style={{textDecoration:"none" }}href="https://www.univ-evry.fr/" target="_blank"> Université d'EVRY Paris Saclay </a></p>
       </Container>
     </Box>
 );
