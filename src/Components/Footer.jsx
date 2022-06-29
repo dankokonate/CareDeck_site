@@ -48,7 +48,6 @@ const Footer = () =>
             <a href="" style={{textDecoration:"none",marginLeft:30}}><img src="https://img.icons8.com/fluency/344/twitter.png" alt="Twitter"  width={30}  /></a> 
             <a href="" style={{textDecoration:"none",marginLeft:30}}><img src="https://img.icons8.com/fluency/344/instagram-new.png" alt="Instagram"  width={30}  /></a> 
           </div>
-
         </div>
         <hr/>
         <p style={{textDecoration:"none", color:"white", margin: 'auto'}}>&copy; {new Date().getFullYear()} Copyright: <a style={{textDecoration:"none" }}href="https://www.univ-evry.fr/" target="_blank"> Université d'EVRY Paris Saclay </a></p>

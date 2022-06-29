@@ -151,3 +151,10 @@
   .action{
     text-decoration: none;
   }
+
+  .item1, .item2{
+    width: 200%;
+    float: left;
+    color: red;
+    display: flex;
+  }

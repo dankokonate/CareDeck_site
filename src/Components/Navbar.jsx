@@ -41,7 +41,7 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                       </Button>
                       <Menu className="NavStyle" {...bindMenu(popupState)}>
-                        <MenuItem>
+                        <MenuItem >
                           <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                             Accueil
                           </Link>
@@ -75,17 +75,17 @@ const Navbar = () => {
                         Accueil
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{marginLeft:20}}>
                       <Link activeClass="active" to="services" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                         Nos Produits
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{marginLeft:20}}>
                       <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                         A Propos
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{marginLeft:20}}>
                       <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} delay={100}>
                         Contact
                       </Link>
