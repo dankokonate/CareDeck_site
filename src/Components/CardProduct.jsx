@@ -102,7 +102,7 @@ export default function MediaCard() {
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions className='action'>
-                                    <a href="https://www.youtube.com/watch?v=WNWBQJPxFs0&ab_channel=Gr%C3%A9goireLichou" target="_blank" style={{ textDecoration: "none" }}>
+                                    <a href="https://www.youtube.com/embed/WNWBQJPxFs0" target="_blank" style={{textDecoration: "none"}}>
                                         <Button variant="contained" size="small" color="primary">
                                             Démo
                                         </Button>

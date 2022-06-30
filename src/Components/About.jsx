@@ -12,7 +12,7 @@ const About = () => {
                 visit='/contact' 
                 btnname="Contactez-nous" 
                 text= "MERCI ! A nos partenaires pour les conseils, la confiance et le soutien qu'ils nous ont apportés."
-                titre= "Voir l'organigramme"
+                titre1= "Voir l'organigramme"
                 logoPart = ""
                 //imgabout={about1}
             />

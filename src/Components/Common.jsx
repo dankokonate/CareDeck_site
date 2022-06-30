@@ -1,6 +1,7 @@
 import React from 'react';
+import { useState } from 'react';
 import { NavLink } from "react-router-dom"
-
+import Organigramme from './organigramme'
 const Common = ({
     name,
     imgsrc,
@@ -11,8 +12,13 @@ const Common = ({
     text,
     titre,
     logoPart,
+    titre1,
     imgabout
 }) => {
+    const [showOrganigram, setShowOrganigram] = useState(false)
+    const handleShowOrganigram = () => {
+        setShowOrganigram(!showOrganigram)
+    }
     return (
         <>
             <section id="header" className="d-flex align-items-center">
@@ -21,12 +27,15 @@ const Common = ({
                         <div className="col-10 mx-auto">
                             <div className="row">
                                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+                                    {showOrganigram && <Organigramme />}
                                     <h1>
                                         {name}
                                         {isCompName ? <strong className="brand-name"> {compName}</strong> : ""}
                                     </h1>
                                     <h3 className="my-3">
-                                        <p> <strong>{titre}</strong></p>
+                                        <a href='organigram.html' target={'_blank'}>
+                                            {titre1} 
+                                        </a>
                                         <p>{text}</p>
                                     </h3>
                                     <div className="mt-3">
